@@ -70,8 +70,8 @@ function setup() {
  
   frameRate(80);
 
-  // bk_song.play();
-  // bk_song.setVolume(0.5);
+  bk_song.play();
+  bk_song.setVolume(0.5);
 
   engine = Engine.create();
   world = engine.world;
@@ -105,7 +105,7 @@ function setup() {
   blink.frameDelay = 20;
   eat.frameDelay = 20;
 
-  bunny = createSprite(420,canvas_Height-80,100,100);
+  bunny = createSprite(170,canvas_Height-80,100,100);
   bunny.scale = 0.2;
 
   bunny.addAnimation('blinking',blink);
